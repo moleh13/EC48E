@@ -17,6 +17,9 @@ def normal_distribution(n):
 def poisson_distribution(n):
     return np.random.poisson(3, n)
 
+def t_distribution(n):
+    return np.random.standard_t(5, n)
+
 # Function to generate sample stats
 def generate_sample_stats(distribution_func, sample_sizes, num_samples):
     sample_means = {}
